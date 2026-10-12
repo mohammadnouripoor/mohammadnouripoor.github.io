@@ -200,13 +200,17 @@ footer a:hover {
   font-size: clamp(3.4rem, 6.5vw, 6.5rem);
 }
 
-.hero h1 span {
+.hero-title {
+  margin: 1.2rem 0 0;
   color: var(--teal-bright);
+  font-size: clamp(1.25rem, 2.3vw, 1.8rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .hero-summary {
   max-width: 650px;
-  margin: 1.75rem 0 0;
+  margin: 1.25rem 0 0;
   color: rgba(255, 255, 255, 0.72);
   font-size: clamp(1.05rem, 1.5vw, 1.3rem);
   line-height: 1.65;
@@ -279,61 +283,22 @@ footer a:hover {
 
 .hero-visual {
   position: relative;
+  width: 90%;
   min-width: 0;
+  justify-self: center;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 34px;
+  background: rgba(255, 255, 255, 0.045);
 }
 
-.hero-visual svg {
+.profile-photo {
   display: block;
   width: 100%;
-  color: rgba(143, 243, 233, 0.32);
-}
-
-.diagram-lines path {
-  vector-effect: non-scaling-stroke;
-}
-
-.diagram-node rect {
-  fill: rgba(11, 31, 51, 0.86);
-  stroke: rgba(255, 255, 255, 0.22);
-  stroke-width: 1.5;
-}
-
-.diagram-node text {
-  fill: #ffffff;
-  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-}
-
-.diagram-node .node-detail {
-  fill: rgba(255, 255, 255, 0.48);
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-}
-
-.visual-label {
-  position: absolute;
-  z-index: 2;
-  padding: 0.45rem 0.7rem;
-  color: rgba(255, 255, 255, 0.6);
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid var(--dark-line);
-  border-radius: 999px;
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.visual-label-top {
-  top: 4%;
-  right: 4%;
-}
-
-.visual-label-bottom {
-  bottom: 2%;
-  left: 3%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 24px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
 }
 
 .section {
@@ -606,10 +571,19 @@ footer a:hover {
   font-size: clamp(1.8rem, 3vw, 2.6rem);
 }
 
-.timeline-body > p:last-child {
+.timeline-body > p:last-child,
+.resume-points {
   max-width: 760px;
   margin: 1rem 0 0;
   color: rgba(255, 255, 255, 0.62);
+}
+
+.resume-points {
+  padding-left: 1.15rem;
+}
+
+.resume-points li + li {
+  margin-top: 0.55rem;
 }
 
 .publications-section {
@@ -825,7 +799,7 @@ footer {
   }
 
   .hero-visual {
-    width: min(100%, 600px);
+    width: min(70%, 420px);
     margin-inline: auto;
   }
 
@@ -977,7 +951,7 @@ footer {
     padding-block: 2rem;
   }
 
-  .hero h1 span,
+  .hero-title,
   .eyebrow,
   .section-index,
   .experience-section .section-index,
