@@ -19,7 +19,6 @@
       </a>
       <nav aria-label="Primary navigation">
         <a href="#skills">Skills</a>
-        <a href="#work">Research</a>
         <a href="#experience">Experience</a>
         <a href="#publications">Publications</a>
         <a href="#education">Education</a>
@@ -85,117 +84,158 @@
       </div>
     </section>
 
-    <section class="section work-section" id="work" aria-labelledby="work-title">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="section-index">02 / Research</p>
-            <h2 id="work-title">Selected Research Projects</h2>
-          </div>
-          <p>Memory systems, near-memory processing, and hardware acceleration.</p>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card project-featured">
-            <div class="project-number">01</div>
-            <div class="project-content">
-              <p class="project-kicker">CXL · Near-memory processing</p>
-              <h3>RAG similarity-search accelerator</h3>
-              <p>Designed synthesizable Verilog RTL for a CXL-based accelerator that computes FP16 dot products and maintains top-K candidates near memory. Verified through simulation, synthesized with Synopsys Design Compiler, and evaluated for area, power, and timing at 1 GHz.</p>
-              <ul class="tag-list" aria-label="Technologies">
-                <li>Verilog</li>
-                <li>CXL</li>
-                <li>FP16</li>
-                <li>Synopsys DC</li>
-              </ul>
-            </div>
-            <div class="project-motif" aria-hidden="true">
-              <span></span><span></span><span></span><span></span><span></span>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-number">02</div>
-            <p class="project-kicker">HBM · Chiplets · LLM inference</p>
-            <h3>Memory systems for AI decode</h3>
-            <p>Contributed to a custom multi-side-PHY HBM architecture addressing bandwidth, shoreline, and capacity limits. Integrated NPU, memory, and NoC simulators to study throughput, latency, bandwidth, package communication, and thermal behavior.</p>
-            <ul class="tag-list" aria-label="Technologies">
-              <li>HBM</li>
-              <li>NoC</li>
-              <li>ONNXim</li>
-              <li>BookSim</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <div class="project-number">03</div>
-            <p class="project-kicker">FPGA · DRAM · Protocol offload</p>
-            <h3>SmartDIMM acceleration</h3>
-            <p>Collaborated on the RTL design of a Samsung AxDIMM accelerator for upper-layer protocol operations on DRAM-resident data, including encryption, decryption, compression, and decompression.</p>
-            <ul class="tag-list" aria-label="Technologies">
-              <li>AxDIMM</li>
-              <li>FPGA</li>
-              <li>RTL</li>
-              <li>Ramulator</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <section class="section experience-section" id="experience" aria-labelledby="experience-title">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading compact-heading">
           <div>
-            <p class="section-index">03 / Experience</p>
-            <h2 id="experience-title">Professional Experience</h2>
+            <p class="section-index">02 / Experience</p>
+            <h2 id="experience-title">Experiences</h2>
           </div>
         </div>
 
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-date">2024 — 2026</div>
-            <div class="timeline-body">
-              <p class="timeline-org">Cornell University</p>
+        <div class="experience-list">
+          <article class="experience-entry">
+            <div class="experience-entry-meta">
+              <p class="experience-date">2024–2026</p>
+              <span class="experience-type">Research</span>
+              <span class="experience-type">academia</span>
+            </div>
+            <div class="experience-entry-main">
+              <p class="experience-org">Cornell University</p>
               <h3>Graduate Research Assistant</h3>
-              <ul class="resume-points">
-                <li>Designed a CXL-based near-memory accelerator for RAG similarity search in Verilog, including FP16 dot products and top-K candidate selection.</li>
-                <li>Verified the RTL through simulation and evaluated synthesized area, power, and timing reports from Synopsys Design Compiler.</li>
-                <li>Studied HBM and chiplet-based memory systems for LLM inference using compute, memory, NoC, and thermal models.</li>
-              </ul>
+              <div class="experience-content">
+                <div class="experience-copy">
+                  <ul class="experience-points">
+                    <li>
+                      <strong>RAG similarity-search accelerator:</strong> Designed synthesizable Verilog RTL for a CXL-based near-memory accelerator with FP16 dot products and top-K candidate selection. Verified through simulation and evaluated synthesized area, power, and timing at a 1 GHz target.
+                      <!-- OPTIONAL VERIFIED LINKS — RAG similarity-search accelerator:
+                      <div class="entry-links">
+                        <a href="PASTE_VERIFIED_URL_HERE">Read paper</a>
+                        <a href="PASTE_VERIFIED_URL_HERE">View code</a>
+                        <a href="PASTE_VERIFIED_URL_HERE">View poster</a>
+                        <a href="PASTE_VERIFIED_URL_HERE">Watch demo</a>
+                      </div>
+                      -->
+                    </li>
+                    <li>
+                      <strong>Memory systems for AI decode:</strong> Contributed to a multi-side-PHY HBM architecture addressing bandwidth, shoreline, and capacity limits. Integrated compute, memory, and NoC simulators to study LLM inference performance and evaluated package communication and thermal behavior.
+                      <!-- OPTIONAL VERIFIED LINKS — Memory systems for AI decode:
+                      <div class="entry-links">
+                        <a href="PASTE_VERIFIED_URL_HERE">Read paper</a>
+                        <a href="PASTE_VERIFIED_URL_HERE">View code</a>
+                        <a href="PASTE_VERIFIED_URL_HERE">View poster</a>
+                        <a href="PASTE_VERIFIED_URL_HERE">Watch demo</a>
+                      </div>
+                      -->
+                    </li>
+                  </ul>
+                </div>
+                <!-- OPTIONAL CORNELL IMAGE — Add one verified image here:
+                <figure class="experience-media">
+                  <img src="PASTE_LOCAL_IMAGE_PATH_HERE" alt="DESCRIBE_THE_IMAGE" loading="lazy">
+                  <figcaption>OPTIONAL_CAPTION</figcaption>
+                </figure>
+                -->
+              </div>
             </div>
           </article>
-          <article class="timeline-item">
-            <div class="timeline-date">2023 — 2024</div>
-            <div class="timeline-body">
-              <p class="timeline-org">University of Kansas</p>
+
+          <article class="experience-entry">
+            <div class="experience-entry-meta">
+              <p class="experience-date">2023–2024</p>
+              <span class="experience-type">Research</span>
+              <span class="experience-type">Academia</span>
+            </div>
+            <div class="experience-entry-main">
+              <p class="experience-org">University of Kansas</p>
               <h3>Graduate Research Assistant</h3>
-              <ul class="resume-points">
-                <li>Contributed RTL to the SmartDIMM FPGA framework for encryption, decryption, compression, and decompression on DRAM-resident data.</li>
-                <li>Conducted circuit-level and architectural DRAM analysis using Cadence and Ramulator.</li>
-              </ul>
+              <div class="experience-content">
+                <div class="experience-copy">
+                  <ul class="experience-points">
+                    <li><strong>Near-memory processing:</strong> Contributed RTL to accelerate upper-layer protocol operations, including encryption, decryption, compression, and decompression, on DRAM-resident data using Samsung’s AxDIMM FPGA platform.</li>
+                    <li><strong>DRAM circuit and architecture analysis:</strong> Studied the DRAM data path from memory cells and bank-level circuitry to peripheral circuits and I/O, using Cadence for circuit-level analysis and Ramulator for system-level simulation.</li>
+                  </ul>
+                  <!-- OPTIONAL VERIFIED LINKS — University of Kansas:
+                  <div class="entry-links">
+                    <a href="PASTE_VERIFIED_URL_HERE">Read paper</a>
+                    <a href="PASTE_VERIFIED_URL_HERE">View code</a>
+                    <a href="PASTE_VERIFIED_URL_HERE">View poster</a>
+                    <a href="PASTE_VERIFIED_URL_HERE">Watch demo</a>
+                  </div>
+                  -->
+                </div>
+                <!-- OPTIONAL UNIVERSITY OF KANSAS IMAGE — Add one verified image here:
+                <figure class="experience-media">
+                  <img src="PASTE_LOCAL_IMAGE_PATH_HERE" alt="DESCRIBE_THE_IMAGE" loading="lazy">
+                  <figcaption>OPTIONAL_CAPTION</figcaption>
+                </figure>
+                -->
+              </div>
             </div>
           </article>
-          <article class="timeline-item">
-            <div class="timeline-date">2016 — 2018</div>
-            <div class="timeline-body">
-              <p class="timeline-org">Toos BioResearch Co.</p>
-              <h3>R&amp;D Engineer — Eye Tracking Systems</h3>
-              <ul class="resume-points">
-                <li>Developed real-time pupil tracking, gaze estimation, and calibration pipelines using camera-based image processing.</li>
-                <li>Improved blink detection using machine-learning methods and developed researcher-facing software in C#.</li>
-              </ul>
+
+          <article class="experience-entry">
+            <div class="experience-entry-meta">
+              <p class="experience-date">2016–2018</p>
+              <span class="experience-type">Industry</span>
+              <span class="experience-type">Research</span>
+              <span class="experience-type">Develop</span>
+            </div>
+            <div class="experience-entry-main">
+              <p class="experience-org">Toos BioResearch Co.</p>
+              <h3>R&amp;D Engineer</h3>
+              <div class="experience-content">
+                <div class="experience-copy">
+                  <ul class="experience-points">
+                    <li><strong>Eye Tracking Systems:</strong> Developed real-time pupil tracking, gaze estimation, and calibration using camera-based image processing. Improved blink detection with machine learning and built software in C# for researchers.</li>
+                  </ul>
+                  <!-- OPTIONAL VERIFIED LINKS — Toos BioResearch Co.:
+                  <div class="entry-links">
+                    <a href="PASTE_VERIFIED_URL_HERE">View code</a>
+                    <a href="PASTE_VERIFIED_URL_HERE">View poster</a>
+                    <a href="PASTE_VERIFIED_URL_HERE">Watch demo</a>
+                  </div>
+                  -->
+                </div>
+                <!-- OPTIONAL TOOS BIORESEARCH IMAGE — Add one verified image here:
+                <figure class="experience-media">
+                  <img src="PASTE_LOCAL_IMAGE_PATH_HERE" alt="DESCRIBE_THE_IMAGE" loading="lazy">
+                  <figcaption>OPTIONAL_CAPTION</figcaption>
+                </figure>
+                -->
+              </div>
             </div>
           </article>
-          <article class="timeline-item">
-            <div class="timeline-date">2013</div>
-            <div class="timeline-body">
-              <p class="timeline-org">Digital Design Lab, Ferdowsi University of Mashhad</p>
+
+          <article class="experience-entry">
+            <div class="experience-entry-meta">
+              <p class="experience-date">2013</p>
+              <span class="experience-type">Internship</span>
+            </div>
+            <div class="experience-entry-main">
+              <p class="experience-org">Digital Design Lab, Ferdowsi University of Mashhad</p>
               <h3>Digital Design Intern</h3>
-              <ul class="resume-points">
-                <li>Designed and tested MIPS processors, floating-point units, VGA, PS/2, and USART controllers on Altera DE2 FPGA boards.</li>
-                <li>Implemented camera interfaces, SRAM/SDRAM controllers, and basic image-processing pipelines.</li>
-              </ul>
+              <div class="experience-content">
+                <div class="experience-copy">
+                  <ul class="experience-points">
+                    <li>Designed and tested MIPS processors, floating-point units, VGA, PS/2, and USART controllers on Altera DE2 FPGA boards.</li>
+                    <li>Implemented camera interfaces, SRAM/SDRAM controllers, and basic image-processing pipelines.</li>
+                  </ul>
+                  <!-- OPTIONAL VERIFIED LINKS — Digital Design Lab:
+                  <div class="entry-links">
+                    <a href="PASTE_VERIFIED_URL_HERE">View code</a>
+                    <a href="PASTE_VERIFIED_URL_HERE">View poster</a>
+                    <a href="PASTE_VERIFIED_URL_HERE">Watch demo</a>
+                  </div>
+                  -->
+                </div>
+                <!-- OPTIONAL DIGITAL DESIGN LAB IMAGE — Add one verified image here:
+                <figure class="experience-media">
+                  <img src="PASTE_LOCAL_IMAGE_PATH_HERE" alt="DESCRIBE_THE_IMAGE" loading="lazy">
+                  <figcaption>OPTIONAL_CAPTION</figcaption>
+                </figure>
+                -->
+              </div>
             </div>
           </article>
         </div>
@@ -205,7 +245,7 @@
     <section class="section publications-section" id="publications" aria-labelledby="publications-title">
       <div class="container publication-layout">
         <div class="publication-heading">
-          <p class="section-index">04 / Publications</p>
+          <p class="section-index">03 / Publications</p>
           <h2 id="publications-title">Selected Publications</h2>
           <a class="text-link" href="https://scholar.google.com/citations?user=QaxF63cAAAAJ" target="_blank" rel="noreferrer">Full profile on Google Scholar <span aria-hidden="true">↗</span></a>
         </div>
@@ -246,7 +286,7 @@
       <div class="container">
         <div class="section-heading">
           <div>
-            <p class="section-index">05 / Education</p>
+            <p class="section-index">04 / Education</p>
             <h2 id="education-title">Education</h2>
           </div>
         </div>
@@ -295,7 +335,7 @@
     <section class="contact-section" aria-labelledby="contact-title">
       <div class="container contact-inner">
         <div>
-          <p class="section-index">06 / Contact</p>
+          <p class="section-index">05 / Contact</p>
           <h2 id="contact-title">Contact</h2>
         </div>
         <div class="contact-copy">
