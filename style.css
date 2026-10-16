@@ -788,54 +788,67 @@ footer a:hover {
   font-size: 0.9rem;
 }
 
-.teaching-block {
-  margin-top: 1.2rem;
-  padding: clamp(2rem, 5vw, 4rem);
+.teaching-section {
+  background: var(--white);
+}
+
+.teaching-list {
+  border-top: 1px solid var(--line);
+}
+
+.teaching-entry {
   display: grid;
-  grid-template-columns: 0.34fr 0.66fr;
-  gap: 4rem;
-  color: var(--white);
-  background: var(--violet);
-  border-radius: var(--radius);
+  grid-template-columns: minmax(180px, 0.28fr) minmax(0, 0.72fr);
+  gap: clamp(2rem, 7vw, 7rem);
+  padding-block: 2rem;
+  border-bottom: 1px solid var(--line);
 }
 
-.teaching-block .section-index {
-  color: rgba(255, 255, 255, 0.72);
-}
-
-.teaching-block h3 {
+.teaching-meta p {
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2rem, 4vw, 3.4rem);
-  font-weight: 500;
-  line-height: 1;
 }
 
-.teaching-courses {
-  display: grid;
-  gap: 2rem;
-}
-
-.teaching-courses article + article {
-  padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.22);
-}
-
-.teaching-courses span {
+.teaching-term {
+  color: var(--teal);
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
-.teaching-courses h4 {
-  margin: 0.35rem 0;
-  font-size: 1.15rem;
+.teaching-institution {
+  margin-top: 0.35rem !important;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
 }
 
-.teaching-courses p {
+.teaching-role {
+  display: inline-block;
+  margin: 0 0 0.65rem;
+  padding: 0.35rem 0.65rem;
+  color: var(--teal);
+  background: rgba(12, 143, 137, 0.08);
+  border: 1px solid rgba(12, 143, 137, 0.22);
+  border-radius: 999px;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.teaching-details h3 {
   margin: 0;
-  color: rgba(255, 255, 255, 0.72);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.teaching-description {
+  max-width: 760px;
+  margin: 0.6rem 0 0;
+  color: var(--ink-soft);
   font-size: 0.9rem;
 }
 
@@ -1010,7 +1023,7 @@ footer {
   .section-heading,
   .publication-layout,
   .contact-inner,
-  .teaching-block {
+  .teaching-entry {
     grid-template-columns: 1fr;
   }
 
@@ -1061,8 +1074,8 @@ footer {
     position: static;
   }
 
-  .teaching-block {
-    gap: 2.5rem;
+  .teaching-entry {
+    gap: 1rem;
   }
 
   .contact-copy .button {
@@ -1112,7 +1125,8 @@ footer {
   .work-section,
   .skills-section,
   .experience-section,
-  .publications-section {
+  .publications-section,
+  .teaching-section {
     color: #000;
     background: #fff;
   }
@@ -1129,7 +1143,9 @@ footer {
   .experience-section .section-index,
   .experience-org,
   .experience-date,
-  .experience-type {
+  .experience-type,
+  .teaching-role,
+  .teaching-term {
     color: #000;
   }
 
@@ -1141,7 +1157,7 @@ footer {
   .project-featured,
   .experience-entry,
   .education-card,
-  .teaching-block {
+  .teaching-entry {
     break-inside: avoid;
     color: #000;
     background: #fff;
@@ -1152,7 +1168,7 @@ footer {
   .experience-points,
   .experience-media figcaption,
   .project-featured .project-content > p,
-  .teaching-courses p {
+  .teaching-description {
     color: #333;
   }
 }
